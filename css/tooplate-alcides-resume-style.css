@@ -24,7 +24,7 @@
 
   :root {
     --primary-color:        #ffd500;
-    --white-color:          #909090;
+    --white-color:          #d6d6d6;
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
 
@@ -130,11 +130,6 @@
     background: var(--primary-color);
   }
 
-
-  /*---------------------------------------
-     GENERAL               
-  -----------------------------------------*/
-
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -157,36 +152,6 @@
   a:hover  {
     color: var(--dark-color);
     text-decoration: none;
-  }
-
-
-  /*---------------------------------------
-     MENU                
-  -----------------------------------------*/
-
-  .navbar {
-    background: transparent;
-    padding: 0.3rem 1rem;
-    transition: all 300ms ease-in-out;
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    left: 0;
-    opacity: 0;
-  }
-
-  .navbar.scroll {
-    background: var(--menu-bg-color);
-    padding: 0.5rem 1rem;
-    position: fixed;
-    opacity: 1;
-  }
-
-  .navbar-brand {
-    color: var(--white-color);
-    font-weight: var(--font-weight-light);
-    font-size: var(--h4-font-size);
   }
 
   .navbar .custom-btn {
@@ -222,78 +187,6 @@
     border-bottom: 1px solid transparent;
   }
 
-  .navbar-toggler {
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    margin: 0 10px 0 0;
-    width: 30px;
-    height: 35px;
-    outline: none;
-  }
-
-  .navbar-toggler:focus {
-    outline: none;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background: transparent;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-    top: 0;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
-    transform: rotate(45deg);
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-    transform: rotate(-45deg);
-  }
-
-
-  .navbar-toggler .navbar-toggler-icon {
-    background: var(--white-color);
-    transition: background 10ms 300ms ease;
-    display: block;
-    width: 30px;
-    height: 2px;
-    position: relative;
-  }
-
-  .navbar-toggler .navbar-toggler-icon::before,
-  .navbar-toggler .navbar-toggler-icon::after {
-    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-    position: absolute;
-    right: 0;
-    left: 0;
-    background: var(--white-color);
-    width: 30px;
-    height: 2px;
-    content: '';
-  }
-
-  .navbar-toggler .navbar-toggler-icon::before {
-    top: -8px;
-  }
-
-  .navbar-toggler .navbar-toggler-icon::after {
-    top: 8px;
-  }
-
-
-
-  /*---------------------------------------
-     HERO                
-  -----------------------------------------*/
-
   .hero-title,
   .email-link {
     background: var(--dark-color);
@@ -301,8 +194,7 @@
     color: var(--white-color);
     display: inline-block;
     margin: 0.5rem 0;
-    padding: 0.5rem 2rem 1.5rem 2rem;
-	font-size: 2.2em;
+	  font-size: 2.2em;
   }
 
   .email-link {
@@ -413,11 +305,6 @@
   .testimonials .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--primary-color);
   }
-
-
-  /*---------------------------------------
-     CONTACT               
-  -----------------------------------------*/
   
   .contact-form .form-control {
     background: transparent;
@@ -573,17 +460,6 @@
     .email-link {
       font-size: 22px;
       padding: 0.5rem 2rem 0.7rem 2rem;
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    .navbar-nav {
-      margin: 1rem 0;
-    }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-      display: inline-block;
-      margin: 5px 0.5rem;
     }
   }
 
